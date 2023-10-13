@@ -34,7 +34,7 @@ else:
 
 async def autopilot():
     LOGS.info("TUNGGU SEBENTAR. SEDANG MEMBUAT GROUP LOG USERBOT UNTUK ANDA")
-    desc = "Group Log untuk IndomieUserBot.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n✦ Powered By ~ @IndomieProject ✦"
+    desc = "Group Log untuk Userbothon.\n\nHARAP JANGAN KELUAR DARI GROUP INI.\n\n✦ Powered By ~ @IndomieProject ✦"
     try:
         grup = await bot(
             CreateChannelRequest(title="Userbot Log", about=desc, megagroup=True)
@@ -63,7 +63,7 @@ async def autobot():
     if who.username:
         username = who.username + "_userbot"
     else:
-        username = "Indomie" + (str(who.id))[5:] + "userbot"
+        username = "Userbothon" + (str(who.id))[5:] + "bot"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
