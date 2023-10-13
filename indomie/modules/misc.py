@@ -18,7 +18,7 @@ from PIL import Image
 
 # ================= CONSTANT =================
 REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/indomiegorengsatu/IndomieUserbot"
+    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/Friscay/Userbothon"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -58,7 +58,7 @@ async def sleepybot(time):
 @indomie_cmd(pattern="shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Menonaktifkan IndomieUserbot....`")
+    await event.edit("`Menonaktifkan Userbothon....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -69,28 +69,27 @@ async def killdabot(event):
 
 @indomie_cmd(pattern="restart$")
 async def killdabot(event):
-    await event.edit("`Restarting IndomieUserbot...`")
+    await event.edit("`Restarting Userbothon...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
                                         "`Userbot Telah Di Restart`")
     # Spin a new instance of bot
-    args = [sys.executable, "-m", "userbot"]
+    args = [sys.executable, "-m", "indomie"]
     execle(sys.executable, *args, environ)
 
 
-@indomie_cmd(pattern="repo$")
+"""@indomie_cmd(pattern="repo$")
 async def repo_is_here(wannasee):
-    """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "**Hai Bego, Gue Make** `[ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ]` **Nichhh**\n"
+        "**Hai Bego, Gue Make** `[Userbothon]` **Nichhh**\n"
         "⚉━━━━━━━━━━━━━━━━━━━━━━⚉\n"
         f"┌ **Repo Userbot   :** [ʀᴇᴘᴏ](https://github.com/indomiegorengsatu/IndomieUserbot)\n"
         f"├ **Updates        :** [ᴜᴘᴅᴀᴛᴇꜱ](https://t.me/IndomieProject)\n"
         f"└ **Channel        :** [ꜱᴛᴏʀᴇ](https://t.me/IndomieStore)\n"
         "⚉━━━━━━━━━━━━━━━━━━━━━━⚉\n"
-    )
+    )"""
 
 
 @indomie_cmd(pattern="repeat (.*)")
@@ -107,7 +106,7 @@ async def repeat(rep):
     await rep.edit(replyText)
 
 
-@indomie_cmd(pattern="owner$")
+"""@indomie_cmd(pattern="owner$")
 async def owner_information(owner):
     await owner.edit(
         "**Semua sosmed pemilik repo ini**\n"
@@ -118,7 +117,7 @@ async def owner_information(owner):
 	f"├ **Updates        :** [ᴜᴘᴅᴀᴛᴇꜱ](https://t.me/IndomieProject)\n"
         f"└ **Store          :** [ꜱᴛᴏʀᴇ](https://t.me/IndomieStore)\n"
         "⚉━━━━━━━━━━━━━━━━━━━━━━⚉\n"
-    )
+    )"""
 
 
 @indomie_cmd(pattern=r"string$")
@@ -129,12 +128,12 @@ async def string(wannasee):
     )
 
 
-@indomie_cmd(pattern="deploy$")
+"""@indomie_cmd(pattern="deploy$")
 async def deploy_userbot(deploy):
     await deploy.edit(
         f"✦ **DEPLOY VIA WEB :** [KLIK DISINI](https://dashboard.heroku.com/new?template=https://github.com/indomiegorengsatu/IndomieUserbot)\n"
         f"✦ **DEPLOY VIA BOT :** [KLIK DISINI](https://telegram.dog/XTZ_HerokuBot?start=JiRsb25nIDIwMDkw)\n"
-    )
+    )"""
 
 
 @indomie_cmd(pattern="raw$")
