@@ -7,7 +7,7 @@ from indomie.utils import asst_cmd
 from indomie import tgbot
 
 TMP_DOWNLOAD_DIRECTORY = "./"
-wibu = "IndomieUserbot"
+wibu = "Userbothon"
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=wibu)
 auth_url = r["auth_url"]
