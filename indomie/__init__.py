@@ -153,7 +153,7 @@ NO_LOAD = os.environ.get("NO_LOAD", "").split()
 
 # Support
 CHANNEL = os.environ.get("CHANNEL", "IndomieStore")
-UPDATES = os.environ.get("CHANNEL2", "IndomieProject")
+UPDATES = os.environ.get("Updates", "IndomieProject")
 
 # Custom icon HELP
 ICON_HELP = os.environ.get("ICON_HELP", "✦")
@@ -197,7 +197,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/indomiegorengsatu/IndomieUserbot")
+    "https://github.com/Friscay/userbothon")
 UPSTREAM_REPO_BRANCH = os.environ.get(
     "UPSTREAM_REPO_BRANCH", "IndomieUserbot")
 
@@ -272,7 +272,7 @@ YOUTUBE_API_KEY = os.environ.get(
 # Untuk Perintah .realive
 RE_TEKS_KUSTOM = os.environ.get(
     "RE_TEKS_KUSTOM",
-    "Hi, [IndomieUserbot](https://github.com/indomiegorengsatu/IndomieUserbot) has been activated!")
+    "Hi, [userbothon](https://github.com/Friscay/userbothon) has been activated!")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
@@ -295,7 +295,7 @@ BITLY_TOKEN = os.environ.get(
     "BITLY_TOKEN") or "o_1fpd9299vp"
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "IndomieUserbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "userbothon")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "3.2.1")
@@ -423,7 +423,7 @@ for binary, path in binaries.items():
 if STRING:
     session = StringSession(str(STRING))
 else:
-    session = "IndomieUserBot"
+    session = "userbothon"
 try:
     bot = TelegramClient(
         session=session,
@@ -504,7 +504,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**IndomieUserBot v{BOT_VER} is back up and running!**\n\n"
+        f"**userbothon v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
     )
@@ -746,7 +746,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("• Repo •",
-                                       "https://github.com/IndomieGorengSatu/IndomieUserbot")],
+                                       "https://github.com")],
                     ]
                 )
 
@@ -763,7 +763,7 @@ with bot:
                     f"**Python           :** `Vᴇʀ {python_version()}` \n"
                     f"**Pytgcalls        :** `{pytgcalls.__version__}` \n"
                     f"**Userbot Version  :** `{BOT_VER}` \n"
-                    f"**Indomie Version  :** `{indomie_version}`\n"
+                    f"**Userbothon Version  :** `{indomie_version}`\n"
                     f"**Branch           :** `{UPSTREAM_REPO_BRANCH}` \n"
                     f"**Base on          :** `{desah.name}` \n"
                     f"**Owner            :** {owner} \n\n"
@@ -774,7 +774,7 @@ with bot:
                                               [
                                                   custom.Button.url(
                                                       text="• Repo •",
-                                                      url="https://github.com/IndomieGorengSatu/IndomieUserbot"
+                                                      url="https://github.com"
                                                    )
                                               ]
                                       ]
@@ -808,7 +808,7 @@ with bot:
                 current_page_number = int(lockpage)
                 buttons = paginate_help(
                     current_page_number, dugmeler, "helpme")
-                text = f"**• IndomieUserbot Iɴʟɪɴᴇ Mᴇɴᴜ •**\n\n• **Owner** `{user.first_name}`\n• **Base on :** `{desah.name}`\n• **Deploy on :** `{HOSTED_ON}`\n• `{len(plugins)}` **Modules**",
+                text = f"**• Userbothon Inline Menu •**\n\n• **Owner** `{user.first_name}`\n• **Base on :** `{desah.name}`\n• **Deploy on :** `{HOSTED_ON}`\n• `{len(plugins)}` **Modules**",
                 await event.edit(
                     text,
                     file=angek,
@@ -827,7 +827,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**• IndomieUserbot Iɴʟɪɴᴇ Mᴇɴᴜ •**\n\n• **Owner** `{user.first_name}`\n• **Base on :** `{desah.name}`\n• **Deploy on :** `{HOSTED_ON}`\n• `{len(plugins)}` **Modules**"
+                text = f"**• Userbothon Inline Menu •**\n\n• **Owner** `{user.first_name}`\n• **Base on :** `{desah.name}`\n• **Deploy on :** `{HOSTED_ON}`\n• `{len(plugins)}` **Modules**"
                 await event.edit(
                     text,
                     file=angek,
@@ -847,7 +847,7 @@ with bot:
                 result = builder.photo(
                     file=angek,
                     link_preview=False,
-                    text=f"**• IndomieUserbot Iɴʟɪɴᴇ Mᴇɴᴜ •**\n\n• **Owner** `{user.first_name}`\n• **Base on :** `{desah.name}`\n• **Deploy on :** `{HOSTED_ON}`\n• `{len(plugins)}` **Modules**".format(
+                    text=f"**• Userbothon Inline Menu •**\n\n• **Owner** `{user.first_name}`\n• **Base on :** `{desah.name}`\n• **Deploy on :** `{HOSTED_ON}`\n• `{len(plugins)}` **Modules**".format(
                         len(dugmeler),
                     ),
                     buttons=main_help_button,
@@ -915,11 +915,11 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✘ Indomie Userbot ✘",
-                    description="IndomieUserBot | Telethon",
+                    title="Userbothon",
+                    description="Userbothon | Telethon",
                     url="https://t.me/IndomieProject",
                     thumb=InputWebDocument(angek, 0, "image/jpeg", []),
-                    text=f"**IndomieUserbot**\n━━━━━━━━━━━━━━━━━━━\n✦ **Owner:** [{user.first_name}](tg://user?id={user.id})\n✦ **Assistant:** {tgbotusername}\n━━━━━━━━━━━━━━━━━━━\n**Updates:** @IndomieProject\n━━━━━━━━━━━━━━━━━━━",
+                    text=f"**Userbothon**\n━━━━━━━━━━━━━━━━━━━\n✦ **Owner:** [{user.first_name}](tg://user?id={user.id})\n✦ **Assistant:** {tgbotusername}\n━━━━━━━━━━━━━━━━━━━\n**Updates:** @IndomieProject\n━━━━━━━━━━━━━━━━━━━",
                     buttons=[
                         [
                             Button.url(
@@ -927,7 +927,7 @@ with bot:
                                 url="https://t.me/IndomieProject"),
                             Button.url(
                                 "• Repository •",
-                                url="https://github.com/IndomieGorengSatu/IndomieUserbot"),
+                                url="https://github.com"),
                         ],
                     ],
                     link_preview=False,
@@ -963,7 +963,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 # https://t.me/TelethonChat/115200                               # @Fliks-Userbot
                 text = (
-                    f"**• IndomieUserbot Iɴʟɪɴᴇ Mᴇɴᴜ •**\n\n• **Owner** `{user.first_name}`\n• **Base on :** `{desah.name}`\n• **Deploy on :** `{HOSTED_ON}`\n• `{len(plugins)}` **Modules**")
+                    f"**• Userbothon Inline Menu •**\n\n• **Owner** `{user.first_name}`\n• **Base on :** `{desah.name}`\n• **Deploy on :** `{HOSTED_ON}`\n• `{len(plugins)}` **Modules**")
                 await event.edit(
                     text,
                     file=angek,
@@ -979,7 +979,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 # https://t.me/TelethonChat/115200                               # @Fliks-Userbot    
                 text = (
-                    f"**• IndomieUserbot Iɴʟɪɴᴇ Mᴇɴᴜ •**\n\n• **Owner** `{user.first_name}`\n• **Base on :** `{desah.name}`\n• **Deploy on :** `{HOSTED_ON}`\n• `{len(plugins)}` **Modules**")
+                    f"**• Userbothon Inline Menu •**\n\n• **Owner** `{user.first_name}`\n• **Base on :** `{desah.name}`\n• **Deploy on :** `{HOSTED_ON}`\n• `{len(plugins)}` **Modules**")
                 await event.edit(
                     text,
                     file=angek,
@@ -1000,7 +1000,7 @@ with bot:
                     f"**Pytgcalls        :** `{pytgcalls.__version__}` \n"
                     f"**Branch           :** `{UPSTREAM_REPO_BRANCH}` \n"
                     f"**Userbot Version  :** `{BOT_VER}` \n"
-                    f"**Indomie Version  :** `{indomie_version}`\n"
+                    f"**Userbothon Version  :** `{indomie_version}`\n"
                     f"**Modules          :** `{len(plugins)}` \n"
                     f"**Base on          :** `{desah.name}` \n")
                 await event.edit(
@@ -1044,14 +1044,13 @@ with bot:
 **Owner -** `{owner}`
 **OwnerID -** `{uid}`
 [👤 Link To Profile](tg://user?id={uid})
-**Owner repo -** [Indomie](https://github.com/IndomieGorengSatu)
 **Updates -** [Indomie](t.me/IndomieProject)
-**Indomie Userbot** [v{BOT_VER}](https://github.com/IndomieGorengSatu/IndomieUserbot)
+**Indomie Userbot** [v{BOT_VER}](https://github.com)
 """,
                                  buttons=[
                                      [
                                          Button.url("• Repo •",
-                                                    "https://github.com/IndomieGorengSatu/IndomieUserbot"),
+                                                    "https://github.com"),
                                          Button.url("• Updates •",
                                                     "https://t.me/IndomieProject")],
                                      [
