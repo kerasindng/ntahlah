@@ -91,7 +91,7 @@ async def indomie(pong):
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
     await pong.edit(
-        f"**╼══❃ ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ ❃══╾ **\n\n"
+        f"**╼══❃ Userbothon ❃══╾ **\n\n"
         f"** ▹  Pɪɴɢᴇʀ  : ** "
         f"`%sms` \n"
         f"** ▹  Uᴘᴛɪᴍᴇ  : ** "
@@ -126,7 +126,7 @@ async def redis(pong):
     await pong.edit(
         f"**[{user.first_name}](tg://user?id={user.id})**        \n"
         f"**➾Kecepatan : ** '%sms'  \n"
-        f"**➾Branch : ** 'IndomieUserbot` \n" % (duration)
+        f"**➾Branch : ** 'Userbothon` \n" % (duration)
     )
 
 
@@ -165,7 +165,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ**\n"
+        f"**Userbothon**\n"
         f"➾ __Signal__    __:__ "
         f"`%sms` \n"
         f"➾ __Uptime__ __:__ "
@@ -190,7 +190,7 @@ async def redis(pong):
     duration = (end - start).microseconds / 1000
     user = await pong.client.get_me()
     await pong.edit(
-        f"**♨ɪɴᴅᴏᴍɪᴇᴜꜱᴇʀʙᴏᴛ**\n\n"
+        f"**Userbothon**\n\n"
         f"** ▹  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ▹  Uᴘᴛɪᴍᴇ  :** "
@@ -306,7 +306,7 @@ async def _(ping):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
-    message = "**╼══❃ IndomieUserbot ❃══╾ **\n\n✧ **Pinger :** `{} ms`\n✧ **Uptime :** `{}`\n✧ **Owner :** `{}`\n✧ **ID :** `{}`"
+    message = "**╼══❃ Userbothon ❃══╾ **\n\n✧ **Pinger :** `{} ms`\n✧ **Uptime :** `{}`\n✧ **Owner :** `{}`\n✧ **ID :** `{}`"
     await ping.reply(message.format(duration, uptime, user.first_name, user.id))
 
 
