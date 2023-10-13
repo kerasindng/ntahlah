@@ -28,13 +28,13 @@ async def help(indomie):
             string += f"`\t\t\t{ICON_HELP}\t\t\t"
         await edit_or_reply(
             indomie,
-            f"**• List Help [IndomieUserbot](https://github.com/IndomieGorengSatu/IndomieUserbot)•**\n\n"
+            f"**• List Help Userbothon •**\n\n"
             f"**• Jumlah** `{len(CMD_HELP)}` **Modules**\n"
             f"**• Bot Owner :** [{memek.first_name}](tg://user?id={memek.id})\n\n"
             "**• Help •**\n"
             f"{ICON_HELP}   {string}"
-            f"\n\nSupport @{CHANNEL}"
-            f"\nSupport @{UPDATES}",
+            f"\n\nChannel @{CHANNEL}"
+            f"\nUpdates @{UPDATES}",
         )
         await indomie.reply(
             f"\n**Contoh Ketik** `{cmd}help ping` **Untuk Melihat Informasi Pengunaan.\nJangan Lupa Berdoa Sebelum Mencoba yahahaha...**"
