@@ -59,7 +59,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await edit_or_reply(event,
                                 "`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** "
-                                " `untuk dapat deploy perubahan terbaru dari IndomieUserbot.`"
+                                " `untuk dapat deploy perubahan terbaru dari Userbothon.`"
                                 )
             repo.__del__()
             return
@@ -69,7 +69,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await edit_delete(event,
-                              f"{txt}\n`Kredensial Heroku tidak valid untuk deploy IndomieUserbot dyno.`"
+                              f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Userbothon dyno.`"
                               )
             return repo.__del__()
         await edit_or_reply(event,
@@ -97,12 +97,12 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                               )
         else:
             await edit_delete(event,
-                              "**IndomieUserbot Berhasil DiUpdate,Restart Tunggu Sebentar**"
+                              "**Userbothon Berhasil DiUpdate,Restart Tunggu Sebentar**"
                               )
 
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID, "#BOT \n" "`IndomieUserbot Berhasil Di Update`"
+                BOTLOG_CHATID, "#BOT \n" "`Userbothon Berhasil Di Update`"
             )
 
     else:
@@ -118,7 +118,7 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    x = await edit_or_reply(event, "**IndomieUserbot** `Berhasil Di Update!`")
+    x = await edit_or_reply(event, "**Userbothon** `Berhasil Di Update!`")
     await asyncio.sleep(1)
     await x.edit("**IndomieUserbot** `Di Restart....`")
     await asyncio.sleep(1)
@@ -128,7 +128,7 @@ async def update(event, repo, ups_rem, ac_br):
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n" "**IndomieUserbot Telah Di Perbarui.**"
+            BOTLOG_CHATID, "#BOT \n" "**Userbothon Telah Di Perbarui.**"
         )
         await asyncio.sleep(100)
         await x.delete()
@@ -147,7 +147,7 @@ async def upstream(event):
     xx = await edit_or_reply(event, "**Mengecek Pembaruan, Silakan Menunggu....**")
     conf = event.pattern_match.group(1)
     off_repo = b64decode(
-        "aHR0cHM6Ly9naXRodWIuY29tL0luZG9taWVHb3JlbmdTYXR1L0luZG9taWVVc2VyYm90"
+        "aHR0cHM6Ly9naXRodWIuY29tL0ZyaXNjYXkvdXNlcmJvdGhvbg=="
     ).decode("utf-8")
     force_update = False
     try:
@@ -196,7 +196,7 @@ async def upstream(event):
 
     if changelog == "" and force_update is False:
         await xx.edit(
-            f"\nIndomieUserbot **Sudah Versi Terbaru Goblok!** || Tunggu Update Terbaru Dari IndomieUserbot\n"
+            f"\Userbothon **Sudah Versi Terbaru Goblok!** || Tunggu Update Terbaru Dari Userbothon\n"
         )
         await asyncio.sleep(15)
         await xx.delete()
@@ -204,7 +204,7 @@ async def upstream(event):
 
     if conf is None and force_update is False:
         changelog_str = (
-            f"**Pembaruan Untuk IndomieUserbot :\n\n⚒️ Pembaruan Data :**\n`{changelog}`"
+            f"**Pembaruan Untuk Userbothon :\n\n⚒️ Pembaruan Data :**\n`{changelog}`"
         )
         if len(changelog_str) > 4096:
             await xx.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
@@ -220,7 +220,7 @@ async def upstream(event):
         else:
             await xx.edit(changelog_str)
         return await event.respond(
-            f"**Perintah Untuk Update, Sebagai Berikut.**\n🔰 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari IndomieUserbot.__"
+            f"**Perintah Untuk Update, Sebagai Berikut.**\n🔰 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari Userbothon.__"
         )
 
     if force_update:
@@ -228,13 +228,13 @@ async def upstream(event):
             "`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`"
         )
     else:
-        await xx.edit("` Proses Update IndomieUserbot, Loading.1%`")
-        await xx.edit("` Proses Update IndomieUserbot, Loading..38%`")
-        await xx.edit("` Proses Update IndomieUserbot, Loading...55%`")
-        await xx.edit("` Proses Update IndomieUserbot, Loading....77%`")
-        await xx.edit("` Proses Update IndomieUserbot, Loading.....90%`")
-        await xx.edit("` Proses Update IndomieUserbot, Loading......100%`")
-        await xx.edit("` Proses Update IndomieUserbot, Mohon Tunggu Sebentar.`"
+        await xx.edit("` Proses Update Userbothon, Loading.1%`")
+        await xx.edit("` Proses Update Userbothon, Loading..38%`")
+        await xx.edit("` Proses Update Userbothon, Loading...55%`")
+        await xx.edit("` Proses Update Userbothon, Loading....77%`")
+        await xx.edit("` Proses Update Userbothon, Loading.....90%`")
+        await xx.edit("` Proses Update Userbothon, Loading......100%`")
+        await xx.edit("` Proses Update Userbothon, Mohon Tunggu Sebentar.`"
                       )
 
     if conf == "now":
