@@ -17,9 +17,9 @@ from indomie import MIE2, MIE3, MIE4, MIE5, bot, branch, tgbot
 from indomie.utils import HOSTED_ON, indomie_version as jembut
 
 MSG_ON = """
-✦ **IndomieUserbot Berhasil Di Aktifkan**
+✦ **Userbothon Berhasil Di Aktifkan**
 ━━
-➠ **Indomie Version -** `{}` **•[{}]•**
+➠ **Userbothon Version -** `{}` **•[{}]•**
 ➠ **Userbot Version -** `{}@{}`
 ➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
 ━━
