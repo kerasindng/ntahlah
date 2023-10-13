@@ -152,7 +152,7 @@ LOAD = os.environ.get("LOAD", "").split()
 NO_LOAD = os.environ.get("NO_LOAD", "").split()
 
 # Support
-CHANNEL = os.environ.get("CHANNEL", "IndomieStore")
+CHANNEL = os.environ.get("CHANNEL", "RejaIsreal")
 UPDATES = os.environ.get("Updates", "IndomieProject")
 
 # Custom icon HELP
@@ -199,7 +199,7 @@ UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
     "https://github.com/Friscay/userbothon")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "IndomieUserbot")
+    "UPSTREAM_REPO_BRANCH", "Userbothon")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
