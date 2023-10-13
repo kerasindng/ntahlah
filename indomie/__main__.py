@@ -58,7 +58,7 @@ LOGS.info(f"Python Version - {python_version()}")
 LOGS.info(f"Telethon Version - {version.__version__}")
 LOGS.info(f"PyTgCalls Version - {pytgcalls.__version__}")
 LOGS.info(f"Userbot Version - {ubotversion} •[{aduh.name}]•")
-LOGS.info(f"IndomieUserbot Version - {ngewe} •[{HOSTED_ON}]•")
+LOGS.info(f"Userbothon Version - {ngewe} •[{HOSTED_ON}]•")
 LOGS.info("[ BERHASIL DIAKTIFKAN! ]")
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
