@@ -757,7 +757,7 @@ with bot:
                 await event.message.get_sender()
                 text = (
                     f"**Hello** [{get_display_name(u)}](tg://user?id={u.id})\n\n"
-                    f"         ✘ **IndomieUserbot** ✘ \n"
+                    f"          **Userbothon** \n"
                     f"**User             :** [{get_display_name(u)}](tg://user?id={u.id}) \n"
                     f"**Telethon         :** `Vᴇʀ {version.__version__}` \n"
                     f"**Python           :** `Vᴇʀ {python_version()}` \n"
