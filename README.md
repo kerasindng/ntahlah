@@ -23,7 +23,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ## Heroku Deployment
 
 <h4>Click the button below to deploy IndomieUserbot on Heroku!</h4>
-<a href="https://dashboard.heroku.com/new?template=https://github.com/IndomieGorengSatu/IndomieDeploy"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=flat&logo=heroku" width="210" height="34.45"/></a> 
+<a href="https://dashboard.heroku.com/new?template=https://github.com/Friscay/userbothon"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=flat&logo=heroku" width="210" height="34.45"/></a> 
 
 
 ## VPS Deployment
