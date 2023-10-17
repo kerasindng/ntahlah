@@ -120,7 +120,7 @@ async def update(event, repo, ups_rem, ac_br):
     await update_requirements()
     x = await edit_or_reply(event, "**Userbothon** `Berhasil Di Update!`")
     await asyncio.sleep(1)
-    await x.edit("**IndomieUserbot** `Di Restart....`")
+    await x.edit("**Userbothon** `Di Restart....`")
     await asyncio.sleep(1)
     await x.edit("`Mohon Menunggu Beberapa Detik.`")
     await asyncio.sleep(10)
