@@ -283,13 +283,11 @@ CMD_HELP.update({
     \n↳ : Dapatkan item acak dari daftar item.",
     "sleep": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`\
     \n↳ : `.sleep`\
-    \n  •  **Function : Biarkan IndomieUserbot tidur selama beberapa detik.",
+    \n  •  **Function : Biarkan Userbot tidur selama beberapa detik.",
     "shutdown": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shutdown`\
     \n↳ : Mematikan bot",
     "string": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.string`\
-    \n↳: Menampilkan link String IndomieUserbot",
-    "repo": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repo`\
-    \n↳ : Menampilan link Repository IndomieUserbot.",
+    \n↳: Menampilkan Bot string",
     "readme": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙 `.readme`\
     \n↳ : Menyediakan tautan untuk mengatur userbot dan modulnya.",
     "repeat": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repeat <no> <text>`\
