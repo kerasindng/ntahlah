@@ -179,18 +179,18 @@ async def redis(alive):
     await alive.edit("__Sabar Goblok..__")
     await alive.edit("__Sabar Goblok...__")
     output = (
-        f"**[Indomie Userbot](https://github.com/indomiegorengsatu/IndomieUserbot) Telah aktif.**\n\n"
+        f"**Userbothon Telah aktif.**\n\n"
         f"┌  **Name             :** [{user.first_name}](tg://user?id={user.id}) \n"
         f"├  **Telethon         :** `Vᴇʀ {version.__version__}` \n"
         f"├  **Python           :** `Vᴇʀ {python_version()}` \n"
         f"├  **Pytgcalls        :** `{pytgcalls.__version__}` \n"
         f"├  **Branch           :** `{UPSTREAM_REPO_BRANCH}` \n"
         f"├  **Userbot Version  :** `{BOT_VER}` \n"
-        f"├  **Indomie Version  :** `{indomie_version}` **<{HOSTED_ON}>**\n"
+        f"├  **Userbothon Version  :** `{indomie_version}` **<{HOSTED_ON}>**\n"
         f"├  **Modules          :** `{len(modules)}` Modules \n"
         f"├  **Uptime           :** `{uptime}` \n"
         f"└  **Base on          :** `{ah.name}` \n"
-        f"    **[ᴜᴘᴅᴀᴛᴇꜱ](https://t.me/IndomieProject)** | **[ᴄʜᴀɴɴᴇʟ](https://t.me/IndomieStore)** | **[𝗢𝘄𝗻𝗲𝗿](tg://user?id={user.id})**")
+        f"    **[Updates](https://t.me/IndomieProject)** | **[Channel](https://t.me/rejaisreal)** | **[Owner](tg://user?id={user.id})**")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
