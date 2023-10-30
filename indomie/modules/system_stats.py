@@ -11,14 +11,13 @@ import platform
 import sys
 import time
 import psutil
+
 from asyncio import create_subprocess_exec as asyncrunapp
 from asyncio.subprocess import PIPE as asyncPIPE
 from platform import python_version
 from shutil import which
 from os import remove
 from datetime import datetime
-
-from pytgcalls import __version__ as pytgcalls
 from telethon import __version__, version
 
 from indomie import ALIVE_LOGO, BOT_VER, CMD_HELP, StartTime, UPSTREAM_REPO_BRANCH, bot
@@ -84,7 +83,6 @@ async def psu(event):
     help_string += "**Informasi Mesin**\n"
     help_string += f"**Python :** `{sys.version}`\n"
     help_string += f"**Telethon :**`{__version__}`\n"
-    help_string += f"**Pytgcalls :** `{pytgcalls.__version__}`\n"
     help_string += f"**Userbot Version :** `{BOT_VER}`\n"
     help_string += f"**Indomie Version :** `{indomie_version}` **[{HOSTED_ON}]**"
     await edit_or_reply(event, help_string)
@@ -183,7 +181,6 @@ async def redis(alive):
         f"┌  **Name             :** [{user.first_name}](tg://user?id={user.id}) \n"
         f"├  **Telethon         :** `Vᴇʀ {version.__version__}` \n"
         f"├  **Python           :** `Vᴇʀ {python_version()}` \n"
-        f"├  **Pytgcalls        :** `{pytgcalls.__version__}` \n"
         f"├  **Branch           :** `{UPSTREAM_REPO_BRANCH}` \n"
         f"├  **Userbot Version  :** `{BOT_VER}` \n"
         f"├  **Userbothon Version  :** `{indomie_version}` **<{HOSTED_ON}>**\n"
