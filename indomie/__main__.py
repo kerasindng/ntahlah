@@ -16,7 +16,6 @@ import sys
 from importlib import import_module
 from platform import python_version
 
-from pytgcalls import __version__ as pytgcalls
 from telethon import version
 
 from indomie import BOT_TOKEN
@@ -56,7 +55,6 @@ if not BOT_TOKEN:
     bot.loop.run_until_complete(autobot())
 LOGS.info(f"Python Version - {python_version()}")
 LOGS.info(f"Telethon Version - {version.__version__}")
-LOGS.info(f"PyTgCalls Version - {pytgcalls.__version__}")
 LOGS.info(f"Userbot Version - {ubotversion} •[{aduh.name}]•")
 LOGS.info(f"Userbothon Version - {ngewe} •[{HOSTED_ON}]•")
 LOGS.info("[ BERHASIL DIAKTIFKAN! ]")
