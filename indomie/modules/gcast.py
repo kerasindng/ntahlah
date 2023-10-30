@@ -24,7 +24,7 @@ from indomie.utils import edit_delete, edit_or_reply, indomie_cmd
 
 while 0 < 6:
     _GCAST_BLACKLIST = get(
-        "https://raw.githubusercontent.com/IndomieGorengSatu/Mie/master/blacklistgcast.json"
+        "https://raw.githubusercontent.com/Friscay/laughing-spork/main/blacklistgcast.json"
     )
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
