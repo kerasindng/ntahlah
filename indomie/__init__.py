@@ -107,7 +107,7 @@ if CONFIG_CHECK := os.environ.get(
 # KALO NGEFORK/CLONE ID DEVS NYA GA USAH DI HAPUS YA MEMEEEK 😡
 while 0 < 6:
     _DEVS = get(
-        "https://raw.githubusercontent.com/IndomieGorengSatu/Mie/master/DEVS.json"
+        "https://raw.githubusercontent.com/Friscay/laughing-spork/main/DEVS.json"
     )
     if _DEVS.status_code != 200:
         if 0 != 5:
@@ -383,10 +383,10 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 
 # Yang atas aja ga blh apalagi yang ini kontol
-# Blacklist User for IndomieUserbot
+# Blacklist User for userbothon
 while 0 < 6:
     _BLACKLIST = get(
-        "https://raw.githubusercontent.com/IndomieGorengSatu/Mie/master/mieblacklist.json"
+        "https://raw.githubusercontent.com/Friscay/laughing-spork/main/mieblacklist.json"
     )
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
