@@ -11,4 +11,4 @@ RUN pip3 install flask
 RUN pip3 install flask_restful
 RUN pip install -r requirements.txt
 
-CMD ["python3", "-m", "indomie"]
+CMD ["bash","start.sh"]
