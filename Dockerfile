@@ -7,7 +7,8 @@ RUN git clone -b Userbothon https://github.com/Friscay/Userbothon /home/Userboth
     && mkdir /home/Userbothon/bin/
 
 WORKDIR /home/Userbothon/
-
+RUN pip3 install flask
+RUN pip3 install flask_restful
 RUN pip install -r requirements.txt
 
 CMD ["python3", "-m", "indomie"]
