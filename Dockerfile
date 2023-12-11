@@ -1,14 +1,14 @@
 #━━━━━ Userbot Telegram ━━━━━
-FROM indomie/indomie:debian
+FROM indomie/indomie:buster
 #━━━━━ By IndomieUserbot ━━━━━
 
-RUN git clone -b Userbothon https://github.com/Friscay/Userbothon /home/Userbothon/ \
-    && chmod 777 /home/Userbothon \
-    && mkdir /home/Userbothon/bin/
+RUN git clone -b Userbothon https://github.com/Friscay/Userbothon /root/Userbothon/ \
+    && chmod 777 /root/Userbothon \
+    && mkdir /root/Userbothon/bin/
 
-WORKDIR /home/Userbothon/
+WORKDIR /root/Userbothon/
 
 RUN pip3 install flask
 RUN pip3 install flask_restful 
 RUN pip3 install gunicorn
-CMD ["bash","start.sh"]
+CMD ["sudo","/root/start.sh"]
