@@ -10,6 +10,4 @@ WORKDIR /home/Userbothon/
 RUN pip3 install flask
 RUN pip3 install flask_restful
 RUN pip3 install gunicorn
-RUN pip install -U -r requirements.txt
-
 CMD ["bash","start.sh"]
