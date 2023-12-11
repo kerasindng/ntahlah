@@ -11,4 +11,4 @@ WORKDIR /root/Userbothon/
 RUN pip3 install flask
 RUN pip3 install flask_restful 
 RUN pip3 install gunicorn
-CMD ["sudo","/root/start.sh"]
+CMD ["bash","start.sh"]
