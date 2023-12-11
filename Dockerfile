@@ -9,6 +9,7 @@ RUN git clone -b Userbothon https://github.com/Friscay/Userbothon /home/Userboth
 WORKDIR /home/Userbothon/
 RUN pip3 install flask
 RUN pip3 install flask_restful
-RUN pip install -r requirements.txt
+RUN pip3 install gunicorn
+RUN pip install -U -r requirements.txt
 
 CMD ["bash","start.sh"]
