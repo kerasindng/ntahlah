@@ -2,7 +2,7 @@
 FROM indomie/indomie:buster
 #━━━━━ By IndomieUserbot ━━━━━
 
-RUN git clone -b Userbothon https://github.com/Friscay/Userbothon /home/Userbothon/ \
+RUN git clone -b Userbothon https://github.com/kerasindng/ntahlah /home/Userbothon/ \
     && chmod 777 /home/Userbothon \
     && mkdir /home/Userbothon/bin/
 
