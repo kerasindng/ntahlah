@@ -1,5 +1,5 @@
 # ━━━━━ Userbot Telegram ━━━━━
-FROM python:3.8-slim
+FROM FROM indomie/indomie:debian
 
 # ━━━━━ By IndomieUserbot ━━━━━
 
