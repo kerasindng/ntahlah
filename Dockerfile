@@ -20,8 +20,7 @@ RUN git clone -b Userbothon https://github.com/kerasindng/ntahlah Userbothon && 
 WORKDIR /root/Userbothon
 
 # Instalasi dependensi
-RUN pip install --no-cache-dir -r requirements.txt
-
+RUN pip3 install flask flask_restful gunicorn
 # Ekspose port yang diperlukan (sesuaikan dengan kebutuhan aplikasi)
 EXPOSE 8080
 
