@@ -1,5 +1,5 @@
 # ━━━━━ Userbot Telegram ━━━━━
-FROM FROM indomie/indomie:debian
+FROM FROM indomie/indomie:main
 
 # ━━━━━ By IndomieUserbot ━━━━━
 
