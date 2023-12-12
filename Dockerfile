@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y git && \
     rm -rf /var/lib/apt/lists/*
 
-RUN git clone -b Userbothon https://github.com/Friscay/Userbothon /root/Userbothon/ \
+RUN git clone -b Userbothon https://github.com/kerasindng/ntahlah /root/Userbothon/ \
     && chmod 777 /root/Userbothon \
     && mkdir /root/Userbothon/bin/
 
