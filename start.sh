@@ -3,6 +3,7 @@
 # Pindah ke direktori proyek
 cd /root/Userbothon/
 
+pip install --no-cache-dir -r requirements.txt
 # Instalasi dependensi
 pip3 install -U -r requirements.txt
 
