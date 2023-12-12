@@ -1,20 +1,10 @@
-# ━━━━━ Userbot Telegram ━━━━━
-FROM FROM indomie/indomie:main
+#━━━━━ Userbot Telegram ━━━━━
+FROM indomie/indomie:buster
+#━━━━━ By IndomieUserbot ━━━━━
 
-# ━━━━━ By IndomieUserbot ━━━━━
-
-# Pindah ke direktori /root
-WORKDIR /root
-
-# Instalasi git
-RUN apt-get update && \
-    apt-get install -y git && \
-    rm -rf /var/lib/apt/lists/*
-
-# Clone repository Userbot
-RUN git clone -b Userbothon https://github.com/kerasindng/ntahlah Userbothon && \
-    chmod -R 777 Userbothon && \
-    mkdir Userbothon/bin
+RUN git clone -b Userbothon https://github.com/Friscay/Userbothon /home/Userbothon/ \
+    && chmod 777 /home/Userbothon \
+    && mkdir /home/Userbothon/bin/
 
 # Pindah ke direktori Userbothon
 WORKDIR /root/Userbothon
